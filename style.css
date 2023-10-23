@@ -97,21 +97,66 @@ section p{
     text-align: center;
 }
 
-#rooms-i button{
+#rooms-i button,
+#full-content #f-button {
     font: 500 16px Inter;
     color: white;
     background-color: #192252;
     border: 0;
     padding: 12px 24px;
-    /* margin-bottom: 30px; */
 }
 
-#rooms-i img{margin: 30px 0;}
+#rooms-i img{margin: 30px 0; width: 100%;}
 #articles{display: flex; flex-direction: column; margin: auto; }
 article{padding: 20px 0;}
-article img{width: 100%; }
+article .row img{width: 100%; }
 article h5{font: 600 2.4rem Montserrat;}
 article a{font: 1.8rem Inter;}
+
+#full-content{padding: 80px 0;}
+#full-content h6{
+    font: 500 1.6rem Inter;
+    color: #424F7B;
+}
+#full-content #s-button{border: 0; background-color: transparent; margin-left: 24px;}
+#full-content h3{
+    color: #424F7B; 
+    font: 600 2.4rem  Montserrat;
+    display: flex;
+    justify-content: space-between;
+}
+
+#right-item div{  
+   
+    box-shadow:  7px 7px 3px  rgb(239, 232, 232);
+    margin: 10px 0;
+    padding: 10px 30px;
+    
+    
+    
+}
+
+#right-item h3 span{
+    width: 30px; 
+    height: 30px; 
+    border-radius: 50%; 
+    background-color: #FFECE2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#middle-d h3 span{
+    background-color: #FF620A;
+    text-align: center;
+    
+  
+}
+    
+#full-content{width: 100%;}
+#left-item{max-width: 407px;}
+#right-item{max-width: 588px;}
+
+
 
     
 
@@ -126,7 +171,8 @@ article a{font: 1.8rem Inter;}
     #imgs{order: 2; min-width: 300px;  height: initial;}
     #imgs img{max-width: 180px;}
     #header-bottom button:hover,
-    #rooms-i button:hover {opacity: 0.7; transition: 0.7s;}
+    #rooms-i button:hover,
+    #full-content #f-button:hover {opacity: 0.7; transition: 0.7s;}
    
     .row{
             display: flex ;
@@ -136,17 +182,36 @@ article a{font: 1.8rem Inter;}
     }
 
     .row:first-child{padding: 80px 0;}
-    .row:nth-child(2){padding-top: 80px; padding-bottom:0;margin-bottom: 32px;}
+
+    .row:nth-child(2){
+        padding-top: 80px; 
+        padding-bottom:0;
+        margin-bottom: 32px;
+    }
+
     .row:last-child{padding-bottom: 80px;padding-top: 0;}
     section {text-align: left;}
     .row:first-child section:first-child,
     .row:last-child section:first-child{order: 2; margin-left: 126px;}
     .row:nth-child(2) section:first-child{ margin-right: 90px;}
-   .row section img{min-width: 250px;}
-    /* #rooms-i{margin: initial;} */
-     #articles{display: flex; flex-direction: row; justify-content: space-between; align-items: center;}
+    .row section img{min-width: 250px;}
+    #rooms-i{padding: 80px 0;}
+
+     #articles{
+        display: flex; 
+        flex-direction: row; 
+        justify-content: space-between; 
+        align-items: center;
+    }
     article{width: 32%; text-align: left; }
-    /* article img{width: 100%;} */
+
+
+    #full-content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 50px;
+    }
 
   }
 
