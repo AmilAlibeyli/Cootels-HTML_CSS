@@ -65,27 +65,21 @@ button:hover{background: rgba(14, 23, 52, 0.702);}
     border: 0;
     padding: 12px 24px;
 }
+
 #middle{transform: translateY(14%);}
 
 main{padding: 0 20px;}
 .wrapper{ display: flex; flex-direction: column; align-items: center;}
 .row{text-align: center; padding: 20px;}
-
-
-
-.row section{
-    max-width: 500px;
-}
-section h2{
-    font:  600 3.6rem Montserrat;
-    color: #192252;
-}
+.row section{max-width: 500px;}
+section h2{font:  600 3.6rem Montserrat;color: #192252;}
 
 section p{
     font: 1.8rem/1.5 Inter;
     color: #848FAC;
     padding: 24px 0;
 }
+
 .row section img{width: 100%;}
 
 #rooms-i{
@@ -98,7 +92,7 @@ section p{
 }
 
 #rooms-i button,
-#full-content #f-button {
+#left-item #f-button {
     font: 500 16px Inter;
     color: white;
     background-color: #192252;
@@ -106,6 +100,7 @@ section p{
     padding: 12px 24px;
 }
 
+#left-item button {margin: 32px 0;}
 #rooms-i img{margin: 30px 0; width: 100%;}
 #articles{display: flex; flex-direction: column; margin: auto; }
 article{padding: 20px 0;}
@@ -114,11 +109,15 @@ article h5{font: 600 2.4rem Montserrat;}
 article a{font: 1.8rem Inter;}
 
 #full-content{padding: 80px 0;}
-#full-content h6{
-    font: 500 1.6rem Inter;
-    color: #424F7B;
+#full-content h6{font: 500 1.6rem Inter; color: #424F7B;}
+
+#full-content #s-button{
+    border: 0; 
+    background-color: transparent; 
+    padding: 12px 24px;
+
 }
-#full-content #s-button{border: 0; background-color: transparent; margin-left: 24px;}
+
 #full-content h3{
     color: #424F7B; 
     font: 600 2.4rem  Montserrat;
@@ -127,13 +126,9 @@ article a{font: 1.8rem Inter;}
 }
 
 #right-item div{  
-   
     box-shadow:  7px 7px 3px  rgb(239, 232, 232);
     margin: 10px 0;
     padding: 10px 30px;
-    
-    
-    
 }
 
 #right-item h3 span{
@@ -148,17 +143,28 @@ article a{font: 1.8rem Inter;}
 #middle-d h3 span{
     background-color: #FF620A;
     text-align: center;
-    
-  
 }
     
 #full-content{width: 100%;}
 #left-item{max-width: 407px;}
 #right-item{max-width: 588px;}
+#end-part{text-align: center; padding: 80px;}
+#circle{
+    width: 10px;
+    height: 10px;
+    padding: 5.3vw;
+    background: url(img/customer.png) center/cover;
+    margin: auto;
+    margin: 62px auto 44px auto;
+}
 
+#end-part h6{
+    font: 500 2rem Inter;
+    color: #192252;
+    padding: 40px 0;
+}
 
-
-    
+  /*Responsive Design  */
 
 @media only screen and (min-width: 600px) {
     html{font-size: 0.5em;}
@@ -211,6 +217,12 @@ article a{font: 1.8rem Inter;}
         justify-content: space-between;
         align-items: center;
         column-gap: 50px;
+    }
+
+    #left-item #s-button:hover{
+       background-color: #192252;
+       font: 500 16px Inter;
+       color: white;
     }
 
   }
