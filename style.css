@@ -72,7 +72,7 @@ main{padding: 0 20px;}
 .wrapper{ display: flex; flex-direction: column; align-items: center;}
 .row{text-align: center; padding: 20px;}
 .row section{max-width: 500px;}
-section h2{font:  600 3.6rem Montserrat;color: #192252;}
+section h2{font:  600 2rem Montserrat;color: #192252;}
 
 section p{
     font: 1.8rem/1.5 Inter;
@@ -164,6 +164,34 @@ article a{font: 1.8rem Inter;}
     padding: 40px 0;
 }
 
+footer{
+    padding: 80px 20px; 
+    background-color: #0B265A;
+    color: white;
+    
+}
+
+footer ul li ,
+footer p  {font: 1.6rem Inter; text-align: left;}
+footer ul li{padding: 12px 0;}
+footer #text{padding: 14px 0 36px 0; line-height: 28px;}
+
+footer h6 a{
+    font: bold 1.6rem Inter;
+    line-height: 19px;
+    color: #fff;
+    padding-top: 25px ;
+    display: block;
+}
+
+#f-row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#icons img{margin: 0 5px;}
+
   /*Responsive Design  */
 
 @media only screen and (min-width: 600px) {
@@ -175,6 +203,7 @@ article a{font: 1.8rem Inter;}
     #header-bottom{flex-direction: row; justify-content: space-between;}
     #header-bottom h1{font-size: 3.1vw; padding: initial;}
     #imgs{order: 2; min-width: 300px;  height: initial;}
+    section h2{font-size: 3.6rem;}
     #imgs img{max-width: 180px;}
     #header-bottom button:hover,
     #rooms-i button:hover,
@@ -209,8 +238,8 @@ article a{font: 1.8rem Inter;}
         justify-content: space-between; 
         align-items: center;
     }
+    
     article{width: 32%; text-align: left; }
-
 
     #full-content{
         display: flex;
@@ -225,6 +254,9 @@ article a{font: 1.8rem Inter;}
        color: white;
     }
 
+    #f-row{ flex-direction: row; justify-content: space-between; padding-right: 64px; column-gap: 50px;}
+    #f-col:nth-child(2){display: flex;  column-gap: 105px;}
+    footer h6 a{padding: initial;}
   }
 
 
